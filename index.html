@@ -3,50 +3,49 @@
 
 <head>
 	<meta charset="UTF-8">
-
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Landing Page</title>
 	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-	<div class="wrapper">
-		<header class="header">
-			<img src="/pics/push-logo.svg" alt="Logo" class="logo">
-			<p class="tagline">push — simple group tracker</p>
-			<button class="header__button" type="button">explore</button>
-		</header>
-		<main class="main-content">
-			<div class="video-container">
-				<video autoplay muted loop class="video">
-					<source src="/video/video.webm" type="video/webm">
-					Your browser does not support the video tag.
-				</video>
-			</div>
-		</main>
-		<footer class="footer">
-			<div class="footer-left">
-				<a href="#" class="app-store-link">
-					<img src="/pics/apple-logo.svg" alt="Apple Logo" class="apple-logo">
-					<div class="app-store-text">
-						<span class="app-store-text-small">download on the</span>
-						<span class="app-store-text-bold">app store</span>
-					</div>
-				</a>
-			</div>
-			<div class="footer-description">
-				designed to streamline the management and tracking of group expenses, especially during travel
-			</div>
-			<div class="footer-right">
-				<ul class="footer-links">
-					<li class="first"><a target="_blank" href="https://www.linkedin.com/company/all-easy/">blog</a></li>
-					<li><a target="_blank" href="#">team</a></li>
-					<li><a target="_blank" href="#">support</a></li>
-					<li><a target="_blank" href="https://push-app.all-easy.org/public/policy/">terms & privacy</a></li>
-					<li class="last">&copy; 2024 push</li>
-				</ul>
-			</div>
-		</footer>
-	</div>
+	<header class="header container">
+		<!-- <img src="/pics/push-logo.svg" alt="Logo" class="logo"> -->
+		<p class="tagline" id="movable-element">push — simple group tracker</p>
+		<button class="header__button " type="button" id="button">explore</button>
+	</header>
+	<main class="main-content container">
+		<!-- <div class="video-container">
+			<video autoplay muted loop class="video">
+				<source src="/video/video.webm" type="video/webm">
+				Your browser does not support the video tag.
+			</video>
+		</div> -->
+	</main>
+	<footer class="footer container" id="footer">
+		<div class="footer-left">
+			<!-- <a href="#" class="app-store-link">
+				<img src="/pics/apple-logo.svg" alt="Apple Logo" class="apple-logo"> -->
+			<!-- <div class="app-store-text">
+					<span class="app-store-text-small">download on the</span>
+					<span class="app-store-text-bold">app store</span>
+				</div>
+			</a> -->
+		</div>
+		<div class="footer-description">
+			designed to streamline the management and tracking of group expenses, especially during travel
+		</div>
+		<div class="footer-right footer-right--closed" id="movable-footer-right">
+			<ul class="footer-links">
+				<li class="first"><a target="_blank" href="https://www.linkedin.com/company/all-easy/">blog</a></li>
+				<li><a target="_blank" href="#">team</a></li>
+				<li><a target="_blank" href="#">support</a></li>
+				<li><a target="_blank" href="https://push-app.all-easy.org/public/policy/">terms & privacy</a></li>
+				<li class="last">&copy; 2024 push</li>
+			</ul>
+		</div>
+	</footer>
+	<script src="main.js"></script>
 </body>
 
 </html>
